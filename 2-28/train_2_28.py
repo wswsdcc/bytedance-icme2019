@@ -6,9 +6,9 @@ from deepctr import SingleFeat
 
 loss_weights = [0.7, 0.3, ]
 
-data = pd.read_csv('./input/final_track2_train.txt', sep='\t', names=[
+data = pd.read_csv('../input/final_track2_train.txt', sep='\t', names=[
         'uid', 'user_city', 'item_id', 'author_id', 'item_city', 'channel', 'finish', 'like', 'music_id', 'did', 'creat_time', 'video_duration'])
-test_data = pd.read_csv('./input/final_track2_test_no_anwser.txt', sep='\t', names=[
+test_data = pd.read_csv('../input/final_track2_test_no_anwser.txt', sep='\t', names=[
         'uid', 'user_city', 'item_id', 'author_id', 'item_city', 'channel', 'finish', 'like', 'music_id', 'did', 'creat_time', 'video_duration'])
 
 train_size = data.shape[0]
