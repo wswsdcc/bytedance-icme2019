@@ -30,3 +30,10 @@ https://www.biendata.com/competition/icmechallenge2019/
 - Use ```reduce_mem_usage``` to reduce memory that pandas use (reduce by more than 50%)
 - Add audio features
 - f, l = [0.7054214385161377, 0.91909530488006386]
+
+2019-3-11
+
+- Based on [deepctr](https://deepctr-doc.readthedocs.io/en/latest/)
+- Try xDeepFM Model
+- Train and test chunk by chunk(use ```DataFrame.get_chunk()```).In the process of training the model, the loss curve is jagged(Loss has been slowly decreasing, but when changing chunks, it suddenly increases), perhaps the model is overfitting.
+- f, l = [0.70538118358974211, 0.91660164186399473]
