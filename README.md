@@ -37,3 +37,8 @@ https://www.biendata.com/competition/icmechallenge2019/
 - Try xDeepFM Model
 - Train and test chunk by chunk(use ```DataFrame.get_chunk()```).In the process of training the model, the loss curve is jagged(Loss has been slowly decreasing, but when changing chunks, it suddenly increases), perhaps the model is overfitting.
 - f, l = [0.70538118358974211, 0.91660164186399473]
+  
+2019-3-15
+
+- Train xDeepFM on user features and NLP submodel(embedding + LSTM) on title features
+- The result is no better than 3-10's
